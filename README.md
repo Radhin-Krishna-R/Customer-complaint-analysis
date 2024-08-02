@@ -44,6 +44,8 @@ Complaint ID: unique to each consumer
 _Tasks to be performed:_
 
 The following tasks are to be performed:
+         
+  **Data Cleaning & Pre-processing**
 - Read the data from the Excel file.
 - Check the data type for both data (test file and train file)
 - Do missing value analysis and drop columns where more than 25% of data is missing 
@@ -56,10 +58,16 @@ field as “Days held”
 - with the help of the days we calculated above, create a new field 'Week_Received' where 
 we calculate the week based on the day of receiving.
 - store data of disputed people into the “disputed_cons” variable for future tasks 
-- Plot bar graph of the total no of disputes of consumers with the help of Seaborn
-- Plot bar graph of the total no of disputes products-wise with the help of Seaborn
-- Plot bar graph of the total no of disputes with Top Issues by Highest Disputes, with the 
-help of seaborn
+
+
+
+  **Data Analysis and Visualization**
+  some ofthe results are uploaded for detailed solution checkout the collab file
+- Plot bar graph of the total no of disputes of consumers 
+- Plot bar graph of the total no of disputes products-wise 
+- Plot bar graph of the total no of disputes with Top Issues by Highest Disputes
+![image](https://github.com/user-attachments/assets/83beb91b-6f91-42f5-8dd0-1183d5e7e087)
+
 - Plot a bar graph of the total no of disputes by State with Maximum number of Disputes
 - Plot bar graph of the total no of disputes Submitted Via different source
 - Plot a bar graph of the total no of disputes where the Company's Response to the 
@@ -68,10 +76,40 @@ Complaints
 Disputes
 - Plot a bar graph of the total no of disputes. Whether there are Disputes Instead of Timely 
 Response
+![image](https://github.com/user-attachments/assets/83d0d487-282f-43c1-81b8-1853385075fc)
+
 - Plot bar graph of the total no of disputes over Year Wise Complaints
-- Plot bar graph of the total no of disputes over Year Wise Disputes
+- ![image](https://github.com/user-attachments/assets/d2a66730-24b5-4f8d-bcc2-0c27ea8b6ce9)
+
+- Plot bar graph of the total no of disputes over each month
 - Plot bar graph of Top Companies with Highest Complaints
+  ![image](https://github.com/user-attachments/assets/1505fb2f-b18d-47c6-a8d6-180b2acd1e05)
+
 - Convert all negative days held to zero (it is the time taken by the authority that can't be 
 negative)
 
+
+
+
+  **Data pre-processing and Machine learning model selection**
+• Splitting the Data Sets Into X and Y by the dependent and independent variables (data 
+selected by PCA)
+• Build given models and measure their test and validation accuracy:
+
+o LogisticRegression
+
+o DecisionTreeClassifier
+
+o RandomForestClassifier
+
+o AdaBoostClassifier
+
+o GradientBoostingClassifier
+
+o KNeighborsClassifier
+
+o XGBClassifier
+
+• Whoever gives the most accurate result uses it and predicts the outcome is selected
+![image](https://github.com/user-attachments/assets/9d61e60c-1d0b-48a4-adda-a0d2efba185f)
 
